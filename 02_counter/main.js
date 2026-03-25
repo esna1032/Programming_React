@@ -2,7 +2,7 @@ let number = 0;
 
 
 // h1에 있는 숫자 요소를 가져오자
-const resultH1 = document.getElementById("counter");
+const result1 = document.getElementById("counter");
 // button에 있는 + 요소를 가져오자
 // const increaseButton = document.getElementById("increase");
 
@@ -16,9 +16,12 @@ const resultH1 = document.getElementById("counter");
 //     resultH1.innerHTML = number;
 // };
 
-const increase = () =>{
-    number++;
-    resultH1.innerHTML = number;
+
+
+const increase = (value = 1) =>{
+    number+=value;
+    result1.innerHTML = number;
 };
+
 
 
