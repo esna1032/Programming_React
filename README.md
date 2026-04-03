@@ -6,3 +6,6 @@ vanilla HTML, JavaScrpit
 npm create vite@latest .
 ```
 ### CounterAPP😒
+- `useState()`
+- `onClick={() => set함수()}`
+- `onClick={() => set함수((이전state) => dlwjs state + 1)}`
