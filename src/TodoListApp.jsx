@@ -25,6 +25,7 @@ function TodoListApp() {
         //기존 todos 복사
         ...todos,
         //newTodo 만들어서 
+        
         //뒤에 추가
         new Todo(text)
     ]);
