@@ -1,10 +1,10 @@
 import Checkbox from './Checkbox.jsx'
 import Button from './Button.jsx' 
 
-export default function TodoHeader() {
+export default function TodoHeader({ todo }) {
     return (
-        <li className="todo__item todo__item--complete">
-            <Checkbox id="i" />
+        <li className={`todo__item ${todo.isCompleted ? " todo__item--completed" : ""}`}>
+            <Checkbox id={todo.id}>{todo.text}</Checkbox>
 
             <Button className="todo__button todo__button--edit">✏️</Button>
             <Button className="todo__button todo__button--delete">❌</Button>
